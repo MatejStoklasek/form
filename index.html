@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Formulář</h1>
+<form method="post">
+    <label for="jméno">Celé jméno</label><br>
+    <input type="text" id="jméno" name="jméno" required><br/>
+
+    <label for="email">E-mail</label><br>
+    <input type="email" id="email" name="email" required><br/>
+
+    <label for="oblíbený den">Oblíbený den</label><br>
+    <select id="oblíbený den" name="oblíbený den">
+        <optgroup label="Všední dny">
+        <option value="Pondělí">Pondělí</option>
+        <option value="Úterý">Úterý</option>
+        <option value="Středa">Středa</option>
+        <option value="Čtvrtek">Čtvrtek</option>
+        <option value="Pátek">Pátek</option>
+        </optgroup>
+        <optgroup label="Víkend">
+            <option value="Sobota">Sobota</option>
+            <option value="Neděle">Neděle</option>
+        </optgroup>
+    </select><br/>
+
+    <label for="heslo">Heslo</label><br>
+    <input type="password" id="heslo" name="heslo" required><br/>
+
+    <button style="border-radius: 4px;box-sizing: 450px" type="submit">Sign Up</button>
+    <p>Máte už Účet?<a href="">Login</a></p>
+</form>
+</body>
+</html>

@@ -7,34 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-<h1>Formulář</h1>
-<form method="post">
-    <label for="jméno">Celé jméno</label><br>
-    <input type="text" id="jméno" name="jméno" required><br/>
+<body style="text-align: center;display: flex;justify-content: center;align-items: center">
 
-    <label for="email">E-mail</label><br>
-    <input type="email" id="email" name="email" required><br/>
+<form style="text-align: center;width: 300px" method="post">
+    <h1 style="text-align: left">Formulář</h1>
 
-    <label for="oblíbený den">Oblíbený den</label><br>
-    <select id="oblíbený den" name="oblíbený den">
+    <label style="display: block;text-align: left" for="jméno">Celé jméno</label>
+    <input style="width: 300px;margin-bottom: 15px;padding: 10px" type="text" id="jméno" name="jméno" required maxlength="50">
+
+    <label style="display: block;text-align: left" for="email">E-mail</label>
+    <input style="width: 300px;margin-bottom: 15px;padding: 10px" type="email" id="email" name="email" required>
+
+    <label style="display: block;text-align: left" for="oblíbený den">Oblíbený den</label>
+    <select style="width: 100%;padding: 10px;margin-bottom: 15px" id="oblíbený den" name="oblíbený den">
         <optgroup label="Všední dny">
-        <option value="Pondělí">Pondělí</option>
-        <option value="Úterý">Úterý</option>
-        <option value="Středa">Středa</option>
-        <option value="Čtvrtek">Čtvrtek</option>
-        <option value="Pátek">Pátek</option>
+            <option value="Pondělí">Pondělí</option>
+            <option value="Úterý">Úterý</option>
+            <option value="Středa">Středa</option>
+            <option value="Čtvrtek">Čtvrtek</option>
+            <option value="Pátek">Pátek</option>
         </optgroup>
         <optgroup label="Víkend">
             <option value="Sobota">Sobota</option>
             <option value="Neděle">Neděle</option>
         </optgroup>
-    </select><br/>
+    </select>
 
-    <label for="heslo">Heslo</label><br>
-    <input type="password" id="heslo" name="heslo" required><br/>
+    <label style="display: block;text-align: left;" for="heslo">Heslo</label>
+    <input style="width: 300px;padding: 10px;margin-bottom: 15px" type="password" id="heslo" name="heslo" required minlength="8">
 
-    <button style="border-radius: 4px;" type="submit">Sign Up</button>
+    <label style="display: block;text-align: left;" for="potvrzení-hesla">Potvrzení Hesla</label>
+    <input style="width: 300px;padding: 10px;margin-bottom: 15px" type="password" id="potvrzení-hesla" name="potvrzení-hesla" required >
+
+    <label style="display: block; text-align: left" for="věk">Váš věk</label>
+    <input style="width: 100%;padding: 10px" id="věk" name="věk" required type="number">
+
+    <label style="display: block;text-align: left;margin-top: 15px"><input type="checkbox" name="checkbox" required>Souhlasím s podmínkami</label>
+
+    <button style="border-radius: 4px; color: white;background-color: blue; padding: 10px;width: 300px;margin-top: 15px" type="submit">Sign Up</button>
     <p>Máte už Účet?<a href="">Login</a></p>
 </form>
 </body>
